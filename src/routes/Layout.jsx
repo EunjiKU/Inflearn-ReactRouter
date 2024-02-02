@@ -1,4 +1,5 @@
-import { Outlet, Link, NavLink } from "react-router-dom"
+// import { Outlet, Link } from "react-router-dom"
+import { Outlet, NavLink } from "react-router-dom"
 
 export default function Layout() {
   return (
@@ -7,14 +8,14 @@ export default function Layout() {
       <nav>
         <ul>
           <li><NavLink to="/">Home</NavLink></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/dashboard">Dashboard</Link></li>
-          <li><Link to="/nothing-here">Nothing Here</Link></li>
-          <li><Link to="/login">Login</Link></li>
-          <li><Link to="/logout">Logout</Link></li>
-          <li><Link to="/team/123">Team 123</Link></li>
-          <li><Link to="/team/new">New Team</Link></li>
-          <li><Link to="/team/123/task/456">Team 123 Task 456</Link></li>
+          <li><NavLink to="/about">About</NavLink></li>
+          <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+          <li><NavLink to="/nothing-here">Nothing Here</NavLink></li>
+          <li><NavLink to="/login">Login</NavLink></li>
+          <li><NavLink to="/logout">Logout</NavLink></li>
+          <li><NavLink to="/team/123">Team 123</NavLink></li>
+          <li><NavLink to="/team/new">New Team</NavLink></li>
+          <li><NavLink to="/team/123/task/456">Team 123 Task 456</NavLink></li>
         </ul>
       </nav>
       <Outlet />
